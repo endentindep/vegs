@@ -1,1 +1,176 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vegs</title><link rel="stylesheet" href="css/cart.css"><script type="module" src="js/cart.js"></script></head><body><header class="header"><div class="header__container"><div class="header__top top-header"><div class="top-header__container container"><ul data-da="960 .icon-menu__body" class="top-header__links"><li class="top-header__link"><a href="">О нас</a></li><li class="top-header__link"><a href="">Оплата и доставка</a></li><li class="top-header__link"><a href="">Новости</a></li><li class="top-header__link"><a href="">Контакты</a></li></ul><div class="top-header__account"><a class="top-header__entry"><div class="top-header__icon"><img src="img/svg/account-icon.svg" alt="abc"></div><span>Войти</span> </a><a class="top-header__registration">Регистрация</a></div><div class="icon-menu"><span></span></div><div class="icon-menu__body"><div data-da="820 .top-header__links #0" class="icon-menu-spollers"><div class="spoller"><a class="spoller__title"><span>Категории</span><img src="img/svg/arrow.svg" alt="arrow"></a><div class="spoller__body icon-menu-spoller-body"></div></div></div></div></div></div><div class="header__body body-header"><div class="body-header__container container"><a href="index.html" data-da="480.5 .top-header__container #0" class="body-header__logo"><img src="img/Logo.png" alt="logo"></a><div class="body-header__search"><div class="body-header__search-icon"><img src="img/svg/search-icon.svg" alt="search"></div><input type="text" autocomplete="off"></div><div class="body-header__actions"><a data-da="480.5 .top-header__container #1" href="tel:+75555555555" class="body-header__phone"><div class="body-header__phone-icon"><img src="img/svg/telephone-icon.svg" alt="phone"></div><span>+7 (555) 555-55-55</span> </a><a class="body-header__favorite"><img src="img/svg/favorite-icon.svg" alt="favorite"> </a><a href="cart.html" class="body-header__cart"><span class="cart-number">0</span> <img src="img/svg/cart-icon.svg" alt="cart"></a></div></div></div><div class="header__categories categories-header"><div class="categories-header__container container"><ul data-da="820 .icon-menu-spoller-body #0" class="categories-header__list"><li class="categories-header__item"><a href="catalog.html">Овощи</a></li><li class="categories-header__item"><a href="catalog.html">Фрукты</a></li><li class="categories-header__item"><a href="catalog.html">Ягоды</a></li><li class="categories-header__item"><a href="catalog.html">Салаты</a></li><li class="categories-header__item"><a href="catalog.html">Молочная продукция</a></li><li class="categories-header__item"><a href="catalog.html">Пищевые добавки</a></li></ul></div></div></div></header><main class="main"><div class="main__top top-main"><div class="top-main__container container"><div class="top-main__breadcrumbs breadcrumbs"><a href="index.html">Главная</a> <span>/</span> <a class="breadcrumbs__current" href="#">Корзина</a></div><h2 class="top-main__title">Корзина</h2></div></div><div class="main__body body-main"><div class="body-main__container container"><div class="body-main__cart-products cart-products"></div><div class="cart-products__empty">Ваша корзина пуста</div><buttons class="body-main__button button"><span>Оформить заказ </span><a href="catalog.html">Перейти в магазин</a></buttons></div></div></main><footer class="footer"><div class="footer__container container"><div class="footer__left"><a href="index.html" class="footer__logo"><img src="img/Logo.png" alt="logo"></a><div class="footer__socials"><a href="" class="footer__social-icon"><img src="img/svg/vk.svg" alt="vk"> </a><a href="" class="footer__social-icon"><img src="img/svg/telegram.svg" alt="telegram"> </a><a href="" class="footer__social-icon"><img src="img/svg/youtube.svg" alt="youtube"> </a><a href="" class="footer__social-icon"><img src="img/svg/whatsapp.svg" alt="whatsapp"></a></div><p class="footer__copyright">© 2023 “Vegs”</p></div><div class="footer__right"><a href="" class="footer__link">О нас</a> <a href="" class="footer__link">Оплата и доставка</a> <a href="" class="footer__link">Новости</a> <a href="" class="footer__link">Контакты</a> <a href="tel:+75555555555" class="footer__link">+7 (555) 555-55-55</a></div></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vegs</title>
+	<link rel="stylesheet" href="css/cart.css">
+	<script type="module" src="js/cart.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__top top-header">
+				<div class="top-header__container container">
+					<ul data-da="960 .icon-menu__body" class="top-header__links">
+						<li class="top-header__link">
+							<a href="">О нас</a>
+						</li>
+						<li class="top-header__link">
+							<a href="">Оплата и доставка</a>
+						</li>
+						<li class="top-header__link">
+							<a href="">Новости</a>
+						</li>
+						<li class="top-header__link">
+							<a href="">Контакты</a>
+						</li>
+					</ul>
+					<div class="top-header__account">
+						<a class="top-header__entry">
+							<div class="top-header__icon">
+								<img src="img/svg/account-icon.svg" alt="abc">
+							</div>
+							<span>Войти</span>
+						</a>
+						<a class="top-header__registration">
+							Регистрация
+						</a>
+					</div>
+					<div class="icon-menu">
+						<span></span>
+					</div>
+					<div class="icon-menu__body">
+						<div data-da="820 .top-header__links #0" class="icon-menu-spollers">
+							<div class="spoller">
+								<a class="spoller__title"><span>Категории</span><img src="img/svg/arrow.svg" alt="arrow"></a>
+								<div class="spoller__body icon-menu-spoller-body"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__body body-header">
+				<div class="body-header__container container">
+					<a href="index.html" data-da="480.5 .top-header__container #0" class="body-header__logo">
+						<img src="img/Logo.png" alt="logo">
+					</a>
+					<div class="body-header__search">
+						<div class="body-header__search-icon">
+							<img src="img/svg/search-icon.svg" alt="search">
+						</div>
+						<input type="text" autocomplete="off">
+					</div>
+					<div class="body-header__actions">
+						<a data-da="480.5 .top-header__container #1" href="tel:+75555555555" class="body-header__phone">
+							<div class="body-header__phone-icon">
+								<img src="img/svg/telephone-icon.svg" alt="phone">
+							</div>
+							<span>+7 (555) 555-55-55</span>
+						</a>
+						<a class="body-header__favorite">
+							<img src="img/svg/favorite-icon.svg" alt="favorite">
+						</a>
+						<a href="cart.html" class="body-header__cart">
+							<span class="cart-number">0</span>
+							<img src="img/svg/cart-icon.svg" alt="cart">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__categories categories-header">
+				<div class="categories-header__container container">
+					<ul data-da="820 .icon-menu-spoller-body #0" class="categories-header__list">
+						<li class="categories-header__item">
+							<a href="catalog.html">Овощи</a>
+						</li>
+						<li class="categories-header__item">
+							<a href="catalog.html">Фрукты</a>
+						</li>
+						<li class="categories-header__item">
+							<a href="catalog.html">Ягоды</a>
+						</li>
+						<li class="categories-header__item">
+							<a href="catalog.html">Салаты</a>
+						</li>
+						<li class="categories-header__item">
+							<a href="catalog.html">Молочная продукция</a>
+						</li>
+						<li class="categories-header__item">
+							<a href="catalog.html">Пищевые добавки</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="main__top top-main">
+			<div class="top-main__container container">
+				<div class="top-main__breadcrumbs breadcrumbs">
+					<a href="index.html">Главная</a>
+					<span>/</span>
+					<a class="breadcrumbs__current" href="#">Корзина</a>
+				</div>
+				<h2 class="top-main__title">
+					Корзина
+				</h2>
+			</div>
+		</div>
+		<div class="main__body body-main">
+			<div class="body-main__container container">
+				<div class="body-main__cart-products cart-products">
+				</div>
+				<div class="cart-products__empty">
+					Ваша корзина пуста
+				</div>
+				<buttons class="body-main__button button">
+					<span>
+						Оформить заказ
+					</span>
+					<a href="catalog.html">
+						Перейти в магазин
+					</a>
+				</buttons>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="footer__left">
+				<a href="index.html" class="footer__logo">
+					<img src="img/Logo.png" alt="logo">
+				</a>
+				<div class="footer__socials">
+					<a href="" class="footer__social-icon">
+						<img src="img/svg/vk.svg" alt="vk">
+					</a>
+					<a href="" class="footer__social-icon">
+						<img src="img/svg/telegram.svg" alt="telegram">
+					</a>
+					<a href="" class="footer__social-icon">
+						<img src="img/svg/youtube.svg" alt="youtube">
+					</a>
+					<a href="" class="footer__social-icon">
+						<img src="img/svg/whatsapp.svg" alt="whatsapp">
+					</a>
+				</div>
+				<p class="footer__copyright">
+					© 2023 “Vegs”
+				</p>
+			</div>
+			<div class="footer__right">
+				<a href="" class="footer__link">О нас</a>
+				<a href="" class="footer__link">Оплата и доставка</a>
+				<a href="" class="footer__link">Новости</a>
+				<a href="" class="footer__link">Контакты</a>
+				<a href="tel:+75555555555" class="footer__link">+7 (555) 555-55-55</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
