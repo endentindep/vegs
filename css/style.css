@@ -781,6 +781,11 @@ input {
     max-width: 39.5625rem;
   }
 }
+@media (min-width: 30.03125rem) {
+  .top-header__link-cart {
+    display: none;
+  }
+}
 .top-header__account {
   display: flex;
   align-items: center;
